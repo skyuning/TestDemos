@@ -3,9 +3,6 @@ package me.skyun.test;
 import android.app.Application;
 
 import com.facebook.stetho.Stetho;
-import com.justalk.cloud.lemon.MtcApi;
-import com.justalk.cloud.zmf.ZmfAudio;
-import com.justalk.cloud.zmf.ZmfVideo;
 
 //import me.skyun.network.NetworkDispatcher;
 
@@ -24,9 +21,6 @@ public class TestApplication extends Application {
 
 //        initNetworkDispather();
 
-        ZmfAudio.initialize(this);
-        ZmfVideo.initialize(this);
-        MtcApi.init(this, "301ad850be069e9694944097");
     }
 
 //    private NetworkDispatcher mNetworkDispatcher;
