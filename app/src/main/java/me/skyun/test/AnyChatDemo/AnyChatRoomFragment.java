@@ -1,12 +1,14 @@
 package me.skyun.test.AnyChatDemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.bairuitech.anychat.AnyChatCoreSDK;
@@ -59,6 +61,14 @@ public class AnyChatRoomFragment extends ListFragment {
         mAdapter.addAll(userInfos);
         mAdapter.notifyDataSetChanged();
     }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        RoleInfo roleInfo = (RoleInfo) l.getItemAtPosition(position);
+        Intent intent = new Intent(getActivity(), AnyChatLiveActivity.class);
+        intent.putExtra("UserID", roleInfo.getUserID());
+        startActivity(intent);
+    }
 }
 
 class _Adapter extends ArrayAdapter<RoleInfo> {
@@ -83,7 +93,7 @@ class _Adapter extends ArrayAdapter<RoleInfo> {
         RoleInfo item = getItem(position);
         holder.mAvatarView.setImageResource(item.getRoleIconID());
         holder.mNameView.setText(item.getName());
-        holder.mNameView.setText(item.getUserID());
+        holder.mIdView.setText(item.getUserID());
         return convertView;
     }
 

@@ -1,27 +1,31 @@
 package me.skyun.test;
 
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
-public class AppMainActivity extends ListActivity {
+public class AppMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ListView lv = new ListView(this);
+        setContentView(lv);
+
         ActivityAdapter adapter = new ActivityAdapter(this);
         adapter.addAll(getActivites());
-        setListAdapter(adapter);
-        getListView().setDividerHeight(5);
+        lv.setAdapter(adapter);
+        lv.setDividerHeight(5);
     }
 
     private class ActivityAdapter extends ArrayAdapter<ActivityInfo> {

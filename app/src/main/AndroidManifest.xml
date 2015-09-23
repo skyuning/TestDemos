@@ -38,6 +38,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".AnyChatDemo.AnyChatLiveActivity" />
         <activity android:name=".AnyChatDemo.AnyChatDemoActivity" />
         <activity android:name="com.example.helloanychat.MainActivity" />
         <activity android:name=".ImageMaskDemo.ImageMaskDemoActivity" />
