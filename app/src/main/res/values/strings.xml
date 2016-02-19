@@ -1,6 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="demo_app_name">Test</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Demo</string>
 </resources>

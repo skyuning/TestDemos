@@ -1,0 +1,21 @@
+<manifest package="me.skyun.demos" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name="me.skyun.demos.UCSDemo.UCSDemoActivity" />
+        <activity android:name="me.skyun.demos.AnyChatDemo.AnyChatLiveActivity" />
+        <activity android:name="me.skyun.demos.AnyChatDemo.AnyChatDemoActivity" />
+        <activity android:name="com.example.helloanychat.MainActivity" />
+        <activity android:name="me.skyun.demos.ImageMaskDemo.ImageMaskDemoActivity" />
+        <activity android:name="me.skyun.demos.BubbleDemoActivity" />
+        <activity android:name="me.skyun.demos.NetworkDemo.NetworkDemoActivity" />
+        <activity android:name="me.skyun.demos.DataBindingDemo.DataBindingDemoActivity" />
+        <activity android:name="me.skyun.demos.MVPDemo.MVPDemoActivity" />
+        <activity android:name="me.skyun.demos.LifeCircleDemo.LifeCircleDemoActivity" />
+        <activity android:name="me.skyun.demos.LifeCircleDemo.LifeCircleDemoActivity2" />
+        <activity android:name=".AnimatorDemo.AnimatorDemoActivity" />
+        <activity android:name="me.skyun.demos.EventBusDemo.EventBusDemoActivity" />
+        <activity android:name="me.skyun.demos.FrescoDemo.FrescoDemoActivity" />
+        <activity android:name="me.skyun.demos.ORMDemo.UI.ORMDemoActivity" />
+    </application>
+
+</manifest>

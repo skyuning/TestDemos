@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="me.skyun.test"
+<manifest package="me.skyun.test"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    //添加如下权限
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    //使用SDK务必在androidManifest.xml文件中加入以下service,receiver
+    <service android:name="com.yzx.service.ConnectionControllerService"></service>
+
+    <receiver android:name="com.yzx.service.AlarmReceiver"></receiver>
+    <receiver android:name="com.yzx.service.MsgBackReceiver"></receiver>
 
     <application
         android:name=".TestApplication"
         android:allowBackup="true"
-        android:label="@string/demo_app_name"
+        android:label="@string/app_name"
         android:theme="@style/DemoAppTheme"
         tools:replace="label, theme">
 
@@ -38,21 +46,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AnyChatDemo.AnyChatLiveActivity" />
-        <activity android:name=".AnyChatDemo.AnyChatDemoActivity" />
-        <activity android:name="com.example.helloanychat.MainActivity" />
-        <activity android:name=".ImageMaskDemo.ImageMaskDemoActivity" />
-        <activity android:name=".Test.BubbleDemoActivity" />
-        <activity android:name=".NetworkDemo.NetworkDemoActivity" />
-        <activity android:name=".DataBindingDemo.DataBindingDemoActivity" />
-        <activity android:name=".MVPDemo.MVPDemoActivity" />
-        <activity android:name=".LifeCircleDemo.LifeCircleDemoActivity" />
-        <activity android:name=".LifeCircleDemo.LifeCircleDemoActivity2" />
-        <!--<activity android:name=".AnimatorDemo.AnimatorDemoActivity" />-->
-        <activity android:name=".EventBusDemo.EventBusDemoActivity" />
+        <activity android:name=".NumBlinkActivity" />
         <activity android:name=".AsyncTest.AsyncTestActivity" />
-        <activity android:name=".FrescoDemo.FrescoDemoActivity" />
-        <activity android:name=".ORMDemo.UI.ORMDemoActivity" />
         <activity android:name=".Test.TestActivity" />
         <activity android:name=".FragmentListArray" />
     </application>

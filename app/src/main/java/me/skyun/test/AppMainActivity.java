@@ -13,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-
 public class AppMainActivity extends AppCompatActivity {
 
     @Override

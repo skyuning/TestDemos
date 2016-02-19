@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+apply from: 'sourceSets.gradle'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+			manifest {
+				srcFile '../demos/src/main/AndroidManifest.xml'
+			}
+            java {
+                srcDir '../demos/src/main/java'
+                srcDir '../demos/libs'
+            }
+            res {
+                srcDir '../demos/src/main/res'
+                srcDir '../demos/src/main/res-anychat'
+            }
+        }
+    }
+}
+
+apply from: 'dependencies.gradle'
