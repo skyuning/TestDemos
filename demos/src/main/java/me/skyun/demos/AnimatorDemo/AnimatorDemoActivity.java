@@ -25,7 +25,7 @@
 //    LayoutTransition mTransitioner = new LayoutTransition();
 //
 //    @Override
-//    protected void onCreate(@Nullable Bundle savedInstanceState) {
+//    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_animator_demo);
 //        findViewById(R.id.bottom_bar).setOnClickListener(new View.OnClickListener() {

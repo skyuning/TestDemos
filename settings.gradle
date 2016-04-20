@@ -1,1 +1,6 @@
-include ':app', ':anhelper', ':androidlib'
+include ':app'
+//include ':androidlib'
+//include ':processor'
+//include ':g7json'
+//include ':g7anno'
+//include ':g7anno-core'

@@ -9,8 +9,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import me.skyun.anhelper.Implement.ORMLiteApi;
-import me.skyun.anhelper.Interface.IORMApi;
+import me.skyun.androidlib.implement.ORMLiteApi;
+import me.skyun.androidlib.interfaces.IORMApi;
 import me.skyun.demos.ORMDemo.Model.Group;
 import me.skyun.demos.ORMDemo.Model.ORMDemoDBHelper;
 import me.skyun.demos.ORMDemo.Model.User;

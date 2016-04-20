@@ -17,7 +17,7 @@ import me.skyun.test.R;
 public class RegisterVerifyFragment extends Fragment {
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_register_verify, null);
         view.findViewById(R.id.register_btn_register).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,6 +9,5 @@ dependencies {
     compile 'com.facebook.fresco:fresco:0.5.0'
     compile 'com.j256.ormlite:ormlite-android:4.48'
     compile project(':androidlib')
-    compile project(path: ':anhelper')
 }
 

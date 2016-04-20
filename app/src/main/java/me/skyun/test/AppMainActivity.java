@@ -1,5 +1,6 @@
 package me.skyun.test;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -13,7 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class AppMainActivity extends AppCompatActivity {
+public class AppMainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -15,7 +15,7 @@ public class DataBindingDemoActivity extends FragmentActivity {
     private TextView mTextView = (TextView) findViewById(R.id.text);
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_bindin_demo);
         mTextView.setText("bbb");

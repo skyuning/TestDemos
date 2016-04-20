@@ -10,6 +10,7 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:1.2.3"
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         // This does not break the build when Android Studio is missing the JRebel for Android plugin.
 //        classpath "com.android.databinding:dataBinder:1.0-rc0"
 
@@ -21,5 +22,6 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }

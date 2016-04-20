@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="me.skyun.demos.CursorDemo.CursorDemoActivity">
+
+    <me.skyun.demos.CursorDemo.RichImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:maxHeight="600dp"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fj" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:text="123456" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/default_error_image"
+        android:scaleType="centerInside"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -17,7 +17,7 @@ import me.skyun.test.R;
 public class RegisterInputFragment extends Fragment {
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_register_input, null);
         view.findViewById(R.id.register_btn_get_captcha).setOnClickListener(new View.OnClickListener() {
             @Override

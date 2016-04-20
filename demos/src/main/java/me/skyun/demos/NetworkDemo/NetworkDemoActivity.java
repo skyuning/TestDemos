@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import org.simple.eventbus.EventBus;
 import org.simple.eventbus.Subscriber;
 
-import me.skyun.network.BasicNetworkRequest;
+import me.skyun.androidlib.network.BasicNetworkRequest;
 import me.skyun.test.R;
 
 /**

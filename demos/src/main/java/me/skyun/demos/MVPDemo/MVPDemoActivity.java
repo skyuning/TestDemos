@@ -24,7 +24,7 @@ public class MVPDemoActivity extends FragmentActivity {
     private String mCaptcha;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(null);
 
         setContentView(R.layout.activity_mvp_demo);

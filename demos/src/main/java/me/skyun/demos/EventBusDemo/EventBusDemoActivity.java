@@ -16,7 +16,7 @@ import me.skyun.test.R;
  */
 public class EventBusDemoActivity extends FragmentActivity {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eventbus_demo);
 

@@ -15,7 +15,7 @@ import me.skyun.test.R;
 public class LifeCircleDemoActivity extends FragmentActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("debug", "onCreate" + getClass().getSimpleName());
 

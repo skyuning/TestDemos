@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentActivity;
 public class CYLibsDemoActivity extends FragmentActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 }

@@ -18,7 +18,7 @@
 //public class AnimatorDemoFragment extends Fragment {
 //
 //    @Override
-//    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        TextView textView = new TextView(inflater.getContext());
 //        textView.setHeight(500);
 //        textView.setBackgroundColor(Color.CYAN);
