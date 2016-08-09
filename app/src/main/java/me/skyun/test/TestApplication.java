@@ -2,6 +2,8 @@ package me.skyun.test;
 
 import android.app.Application;
 
+import jp.wasabeef.takt.Takt;
+
 //import com.facebook.stetho.Stetho;
 
 //import me.skyun.androidlib.network.NetworkDispatcher;
@@ -13,6 +15,8 @@ public class TestApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        Takt.stock(this).play();
 
 //        Stetho.initialize(Stetho.newInitializerBuilder(this)
 //            .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))

@@ -25,7 +25,9 @@
     <application
         android:name=".TestApplication"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:label="@string/app_name"
+        android:theme="@style/AppTheme"
         tools:replace="label">
         <activity android:name=".AppMainActivity">
             <intent-filter>
@@ -53,7 +55,16 @@
             android:name="me.skyun.demos.ImageSpanDemo.ImageSpanDemoActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name="me.skyun.demos.CursorDemo.CursorDemoActivity" />
-        <activity android:name=".DBFlowDemo.DBFlowDemoActivity"></activity>
+        <activity android:name="me.skyun.demos.dbflowdemo.DBFlowDemoActivity" />
+        <activity android:name="me.skyun.demos.dragdemo.DragDemoActivity" />
+        <activity android:name="me.skyun.demos.broadcastdemo.BroadcastDemoActivity" />
+        <activity android:name=".scrolldemo.ScrollDemoActivity" />
+        <activity android:name=".mapdemo.MapDemoActivity" />
+        <activity android:name=".gyrodemo.GyroDemoActivity" />
+        <activity
+            android:name=".vrscreendemo.VRScreenDemoActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".vrscreendemo.TexturedRectangleTest" />
     </application>
 
 </manifest>

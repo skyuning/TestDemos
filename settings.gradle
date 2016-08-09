@@ -1,6 +1,15 @@
 include ':app'
-//include ':androidlib'
+
+include ':min3d'
+//include ':min3dSampleProject'
+
+//include ':ioc-processor'
+//include ':ioc'
+//include ':iocprocessor'
+//include ':dbflow-processor'
+//include ':dbflow-core'
 //include ':processor'
 //include ':g7json'
 //include ':g7anno'
 //include ':g7anno-core'
+

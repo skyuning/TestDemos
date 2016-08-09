@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MapView">
+        <attr name="shader" format="reference" />
+        <attr name="xMeter" format="integer" />
+        <attr name="yMeter" format="integer" />
+    </declare-styleable>
+</resources>
