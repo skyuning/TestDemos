@@ -61,8 +61,8 @@ public class VRScreenDemoActivity extends Activity implements SensorEventListene
     }
 
     private void test3() {
-        mLeftSurfaceView.setRenderer(new SimpleRenderer(this));
-        mRightSurfaceView.setRenderer(new SimpleRenderer(this));
+//        mLeftSurfaceView.setRenderer(new SimpleRenderer(this));
+//        mRightSurfaceView.setRenderer(new SimpleRenderer(this));
     }
 
     private class _Renderer implements GLSurfaceView.Renderer {

@@ -93,8 +93,7 @@ public class TexturedRectangleTest extends Activity {
 
         @Override
         public void onSurfaceChanged(GL10 gl, int width, int height) {
-            Log.d("GLSurfaceViewTest", "surface changed: " + width + "x"
-                    + height);
+            Log.d("GLSurfaceViewTest", "surface changed: " + width + "x" + height);
         }
 
         @Override

@@ -1,6 +1,7 @@
 package me.skyun.test;
 
 import android.app.Application;
+import android.util.Log;
 
 import jp.wasabeef.takt.Takt;
 
@@ -18,6 +19,9 @@ public class TestApplication extends Application {
 
         Takt.stock(this).play();
 
+        Utils.newFloatBuffer(null);
+        Log.d("debug", "test lint");
+
 //        Stetho.initialize(Stetho.newInitializerBuilder(this)
 //            .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))
 //            .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(this))
@@ -27,6 +31,9 @@ public class TestApplication extends Application {
 
     }
 
+    private void test() {
+    }
+
 //    private NetworkDispatcher mNetworkDispatcher;
 
 //    private void initNetworkDispather() {
@@ -34,3 +41,4 @@ public class TestApplication extends Application {
 //        EventBus.getDefault().register(mNetworkDispatcher);
 //    }
 }
+
