@@ -1,75 +1,80 @@
 package me.skyun.test.vrscreendemo;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.GLSurfaceView;
-import android.opengl.GLUtils;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 
-import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
-import java.nio.ShortBuffer;
-
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
-
-import me.skyun.test.BufferUtil;
 import me.skyun.test.R;
 
 public class VRScreenDemoActivity extends Activity implements SensorEventListener {
 
     private SensorManager mSensorManager;
     private Sensor gyroscopeSensor;
+    private static final float NS2S = 1.0f / 1000000000.0f;
+    private float[] angle = new float[3];
+    private long timestamp;
 
     private FrameLayout mDividerView;
-    private ImageView mLeftScreen;
-    private ImageView mRightScreen;
     private GLSurfaceView mLeftSurfaceView;
     private GLSurfaceView mRightSurfaceView;
+    private MyGLRender mLeftRender;
+    private MyGLRender mRightRender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vrscreen_demo);
+
+        mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        gyroscopeSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        mSensorManager.registerListener(this, gyroscopeSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
         mLeftSurfaceView = (GLSurfaceView) findViewById(R.id.surface_left);
-//        mRightSurfaceView = (GLSurfaceView) findViewById(R.id.surface_right);
+        mRightSurfaceView = (GLSurfaceView) findViewById(R.id.surface_right);
 
         test();
+
+        findViewById(R.id.reset).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mLeftRender.resetLookAt();
+                mRightRender.resetLookAt();
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mSensorManager.unregisterListener(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         mLeftSurfaceView.onResume();
-//        mRightSurfaceView.onResume();
+        mRightSurfaceView.onResume();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         mLeftSurfaceView.onPause();
-//        mRightSurfaceView.onPause();
+        mRightSurfaceView.onPause();
     }
 
     private void test() {
-        mLeftSurfaceView.setRenderer(new MyGLRender(this));
+        mLeftRender = new MyGLRender(this);
+        mRightRender = new MyGLRender(this);
+        mLeftSurfaceView.setRenderer(mLeftRender);
+        mRightSurfaceView.setRenderer(mRightRender);
     }
-
-    private void test3() {
-//        mLeftSurfaceView.setRenderer(new SimpleRenderer(this));
-//        mRightSurfaceView.setRenderer(new SimpleRenderer(this));
-    }
-
-    private static final float NS2S = 1.0f / 1000000000.0f;
-    private float[] angle = new float[3];
-    private long timestamp;
 
     @Override
     public void onSensorChanged(SensorEvent event) {
@@ -96,9 +101,16 @@ public class VRScreenDemoActivity extends Activity implements SensorEventListene
                 System.out.println("gyroscopeSensor.getMinDelay()----------->" + gyroscopeSensor.getMinDelay());
 
                 int padding = (int) angley * 5;
-                mDividerView.setPadding(padding, 0, padding, 0);
-                mLeftScreen.setPadding(padding, padding, padding, padding);
-                mRightScreen.setPadding(padding, padding, padding, padding);
+//                mDividerView.setPadding(padding, 0, padding, 0);
+                mLeftSurfaceView.setPadding(padding, padding, padding, padding);
+                mRightSurfaceView.setPadding(padding, padding, padding, padding);
+
+
+                anglex = (float) Math.toDegrees(event.values[0] * dT);
+                angley = (float) Math.toDegrees(event.values[1] * dT);
+                anglez = (float) Math.toDegrees(event.values[2] * dT);
+                mLeftRender.rotate(new float[]{anglex, angley, anglez});
+                mRightRender.rotate(new float[]{anglex, angley, anglez});
             }
 
             //将当前时间赋值给timestamp
