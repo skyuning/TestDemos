@@ -4,7 +4,7 @@ import android.app.Application;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import jp.wasabeef.takt.Takt;
+//import jp.wasabeef.takt.Takt;
 
 //import com.facebook.stetho.Stetho;
 
@@ -18,7 +18,7 @@ public class TestApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Takt.stock(this).play();
+//        Takt.stock(this).play();
 
         Log.d("debug", "test lint");
 

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        图标预览请参考:
+            http://iconfont.chunyu.me/release/1.0.1/demo.html
+    -->
+    
+    <!-- alert -->
+    <string name="iconfont_alert">\uE001</string>
+    <!-- angle-right -->
+    <string name="iconfont_angle_right">\uE002</string>
+    <!-- bottle-o -->
+    <string name="iconfont_bottle_o">\uE003</string>
+    <!-- bottle -->
+    <string name="iconfont_bottle">\uE004</string>
+    <!-- chat-chat-l -->
+    <string name="iconfont_chat_chat_l">\uE005</string>
+    <!-- chat-chat -->
+    <string name="iconfont_chat_chat">\uE006</string>
+    <!-- chat-check -->
+    <string name="iconfont_chat_check">\uE007</string>
+    <!-- chat-o -->
+    <string name="iconfont_chat_o">\uE008</string>
+    <!-- chat -->
+    <string name="iconfont_chat">\uE009</string>
+    <!-- check-o -->
+    <string name="iconfont_check_o">\uE00A</string>
+    <!-- clinic-no0 -->
+    <string name="iconfont_clinic_no0">\uE00B</string>
+    <!-- clinic-no1 -->
+    <string name="iconfont_clinic_no1">\uE00C</string>
+    <!-- clinic-no11 -->
+    <string name="iconfont_clinic_no11">\uE00D</string>
+    <!-- clinic-no12-i -->
+    <string name="iconfont_clinic_no12_i">\uE00E</string>
+    <!-- clinic-no12 -->
+    <string name="iconfont_clinic_no12">\uE00F</string>
+    <!-- clinic-no13 -->
+    <string name="iconfont_clinic_no13">\uE010</string>
+    <!-- clinic-no14 -->
+    <string name="iconfont_clinic_no14">\uE011</string>
+    <!-- clinic-no15 -->
+    <string name="iconfont_clinic_no15">\uE012</string>
+    <!-- clinic-no16 -->
+    <string name="iconfont_clinic_no16">\uE013</string>
+    <!-- clinic-no17 -->
+    <string name="iconfont_clinic_no17">\uE014</string>
+    <!-- clinic-no19 -->
+    <string name="iconfont_clinic_no19">\uE015</string>
+    <!-- clinic-no2 -->
+    <string name="iconfont_clinic_no2">\uE016</string>
+    <!-- clinic-no20 -->
+    <string name="iconfont_clinic_no20">\uE017</string>
+    <!-- clinic-no3 -->
+    <string name="iconfont_clinic_no3">\uE018</string>
+    <!-- clinic-no4 -->
+    <string name="iconfont_clinic_no4">\uE019</string>
+    <!-- clinic-no6 -->
+    <string name="iconfont_clinic_no6">\uE01A</string>
+    <!-- clinic-no7 -->
+    <string name="iconfont_clinic_no7">\uE01B</string>
+    <!-- clinic-no8 -->
+    <string name="iconfont_clinic_no8">\uE01C</string>
+    <!-- clinic-no9 -->
+    <string name="iconfont_clinic_no9">\uE01D</string>
+    <!-- clock -->
+    <string name="iconfont_clock">\uE01E</string>
+    <!-- crown-o -->
+    <string name="iconfont_crown_o">\uE01F</string>
+    <!-- crown -->
+    <string name="iconfont_crown">\uE020</string>
+    <!-- disease-db-o -->
+    <string name="iconfont_disease_db_o">\uE021</string>
+    <!-- disease-db -->
+    <string name="iconfont_disease_db">\uE022</string>
+    <!-- doctor-search -->
+    <string name="iconfont_doctor_search">\uE023</string>
+    <!-- document-o -->
+    <string name="iconfont_document_o">\uE024</string>
+    <!-- document -->
+    <string name="iconfont_document">\uE025</string>
+    <!-- face-mask-o -->
+    <string name="iconfont_face_mask_o">\uE026</string>
+    <!-- face-mask -->
+    <string name="iconfont_face_mask">\uE027</string>
+    <!-- feedback-o -->
+    <string name="iconfont_feedback_o">\uE028</string>
+    <!-- feedback -->
+    <string name="iconfont_feedback">\uE029</string>
+    <!-- female-o -->
+    <string name="iconfont_female_o">\uE02A</string>
+    <!-- female -->
+    <string name="iconfont_female">\uE02B</string>
+    <!-- gender-o -->
+    <string name="iconfont_gender_o">\uE02C</string>
+    <!-- gender -->
+    <string name="iconfont_gender">\uE02D</string>
+    <!-- gold-medal-o -->
+    <string name="iconfont_gold_medal_o">\uE02E</string>
+    <!-- gold-medal -->
+    <string name="iconfont_gold_medal">\uE02F</string>
+    <!-- hanzi-qiang -->
+    <string name="iconfont_hanzi_qiang">\uE030</string>
+    <!-- hanzi-si-l -->
+    <string name="iconfont_hanzi_si_l">\uE031</string>
+    <!-- hanzi-si -->
+    <string name="iconfont_hanzi_si">\uE032</string>
+    <!-- heart -->
+    <string name="iconfont_heart">\uE033</string>
+    <!-- heart2 -->
+    <string name="iconfont_heart2">\uE034</string>
+    <!-- help-o -->
+    <string name="iconfont_help_o">\uE035</string>
+    <!-- home -->
+    <string name="iconfont_home">\uE036</string>
+    <!-- hospital-l -->
+    <string name="iconfont_hospital_l">\uE037</string>
+    <!-- hospital -->
+    <string name="iconfont_hospital">\uE038</string>
+    <!-- image -->
+    <string name="iconfont_image">\uE039</string>
+    <!-- keyboard -->
+    <string name="iconfont_keyboard">\uE03A</string>
+    <!-- light-bulb-o -->
+    <string name="iconfont_light_bulb_o">\uE03B</string>
+    <!-- light-bulb -->
+    <string name="iconfont_light_bulb">\uE03C</string>
+    <!-- like -->
+    <string name="iconfont_like">\uE03D</string>
+    <!-- location -->
+    <string name="iconfont_location">\uE03E</string>
+    <!-- mail-o -->
+    <string name="iconfont_mail_o">\uE03F</string>
+    <!-- mail -->
+    <string name="iconfont_mail">\uE040</string>
+    <!-- male-o -->
+    <string name="iconfont_male_o">\uE041</string>
+    <!-- male -->
+    <string name="iconfont_male">\uE042</string>
+    <!-- medical-case -->
+    <string name="iconfont_medical_case">\uE043</string>
+    <!-- money-o -->
+    <string name="iconfont_money_o">\uE044</string>
+    <!-- money-renew -->
+    <string name="iconfont_money_renew">\uE045</string>
+    <!-- money -->
+    <string name="iconfont_money">\uE046</string>
+    <!-- more-o -->
+    <string name="iconfont_more_o">\uE047</string>
+    <!-- more -->
+    <string name="iconfont_more">\uE048</string>
+    <!-- phone-clock -->
+    <string name="iconfont_phone_clock">\uE049</string>
+    <!-- phone-l -->
+    <string name="iconfont_phone_l">\uE04A</string>
+    <!-- phone -->
+    <string name="iconfont_phone">\uE04B</string>
+    <!-- phone2-o -->
+    <string name="iconfont_phone2_o">\uE04C</string>
+    <!-- phone2 -->
+    <string name="iconfont_phone2">\uE04D</string>
+    <!-- pill-o -->
+    <string name="iconfont_pill_o">\uE04E</string>
+    <!-- pill -->
+    <string name="iconfont_pill">\uE04F</string>
+    <!-- plane -->
+    <string name="iconfont_plane">\uE050</string>
+    <!-- privilege-o -->
+    <string name="iconfont_privilege_o">\uE051</string>
+    <!-- privilege -->
+    <string name="iconfont_privilege">\uE052</string>
+    <!-- record -->
+    <string name="iconfont_record">\uE053</string>
+    <!-- refresh -->
+    <string name="iconfont_refresh">\uE054</string>
+    <!-- ring-double-o -->
+    <string name="iconfont_ring_double_o">\uE055</string>
+    <!-- ring-double -->
+    <string name="iconfont_ring_double">\uE056</string>
+    <!-- scan-o -->
+    <string name="iconfont_scan_o">\uE057</string>
+    <!-- scan -->
+    <string name="iconfont_scan">\uE058</string>
+    <!-- search -->
+    <string name="iconfont_search">\uE059</string>
+    <!-- setting-o -->
+    <string name="iconfont_setting_o">\uE05A</string>
+    <!-- setting -->
+    <string name="iconfont_setting">\uE05B</string>
+    <!-- share -->
+    <string name="iconfont_share">\uE05C</string>
+    <!-- sheet-check-o -->
+    <string name="iconfont_sheet_check_o">\uE05D</string>
+    <!-- sheet-check -->
+    <string name="iconfont_sheet_check">\uE05E</string>
+    <!-- sheet-check2-l -->
+    <string name="iconfont_sheet_check2_l">\uE05F</string>
+    <!-- sheet-check2 -->
+    <string name="iconfont_sheet_check2">\uE060</string>
+    <!-- sheet-check3-o -->
+    <string name="iconfont_sheet_check3_o">\uE061</string>
+    <!-- sheet-check3 -->
+    <string name="iconfont_sheet_check3">\uE062</string>
+    <!-- shopcart-o -->
+    <string name="iconfont_shopcart_o">\uE063</string>
+    <!-- shopcart -->
+    <string name="iconfont_shopcart">\uE064</string>
+    <!-- star-o -->
+    <string name="iconfont_star_o">\uE065</string>
+    <!-- star -->
+    <string name="iconfont_star">\uE066</string>
+    <!-- video-l -->
+    <string name="iconfont_video_l">\uE067</string>
+    <!-- video -->
+    <string name="iconfont_video">\uE068</string>
+    <!-- weight-kg-o -->
+    <string name="iconfont_weight_kg_o">\uE069</string>
+    <!-- weight-kg -->
+    <string name="iconfont_weight_kg">\uE06A</string>
+
+</resources>

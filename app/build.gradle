@@ -7,7 +7,7 @@ android {
     buildToolsVersion '22.0.1'
     defaultConfig {
         applicationId 'me.skyun.test'
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -94,6 +94,6 @@ dependencies {
 dependencies {
     compile 'com.android.support.constraint:constraint-layout:+'
     compile project(path: ':min3d')
-    compile 'jp.wasabeef:takt:1.0.2'
+//    compile 'jp.wasabeef:takt:1.0.2'
 }
 

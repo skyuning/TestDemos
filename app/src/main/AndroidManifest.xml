@@ -65,6 +65,7 @@
             android:name=".vrscreendemo.VRScreenDemoActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".vrscreendemo.TexturedRectangleTest" />
+        <activity android:name=".svgdemo.SVGDemoActivity"></activity>
     </application>
 
 </manifest>
